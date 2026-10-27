@@ -50,7 +50,6 @@ nav a:hover,nav a:focus{color:var(--gold-2)}
 .card .num{font-family:"Libre Baskerville",serif;color:var(--gold);font-size:.95rem;margin:0 0 40px}
 .card .kick{font-family:"Josefin Sans",sans-serif;font-weight:600;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;margin:0 0 6px}
 .card h3{font-family:"Federo",serif;font-weight:400;font-size:clamp(1.8rem,6vw,2.1rem);margin:0 0 18px;line-height:1.15}
-.card h3 sup{font-size:.35em;color:var(--gold);vertical-align:super}
 .card p.desc{font-family:"Josefin Sans",sans-serif;font-size:.98rem;line-height:1.75;margin:0}
 .card.light{background:#fbf6ec;border:1px solid #cdbf9f;color:#4c4436}.card.light .kick{color:#7d725f}.card.light h3{color:#15120d}
 .card.dark{background:var(--ink-2);border:1px solid var(--gold);color:#cfc6b4}.card.dark .kick{color:var(--muted)}.card.dark h3{color:var(--cream)}
@@ -95,3 +94,41 @@ footer{background:#070605;border-top:1px solid rgba(255,255,255,.1);padding:34px
 .nf img.mark{max-width:520px;width:100%}
 .nf h1{font-size:clamp(2.2rem,8vw,3.4rem);margin:20px 0 10px}
 .nf p{font-family:"Josefin Sans",sans-serif;color:var(--muted);margin:0 0 26px}
+/* events CTA + booking inquiry */
+.ev-cta{margin:30px 0 0}
+.book{background:var(--cream);color:var(--text);padding:76px 0 86px;border-top:1px solid var(--gold)}
+.book-grid{display:grid;gap:34px}
+.book .rule.left{margin:0 0 22px;width:120px}
+.book .rule.left::before{display:none}
+.book h2{font-size:clamp(2.4rem,9vw,3.7rem);color:#15120d}
+.book-lede{font-family:"Josefin Sans",sans-serif;font-size:1.04rem;color:#5a5142;max-width:24rem;margin:16px 0 0}
+.book-card{background:var(--ink-2);color:var(--cream);border:1px solid var(--gold);outline:1px solid rgba(201,162,74,.45);outline-offset:-9px;padding:30px 22px 32px}
+.form-title{font-family:"Federo",serif;font-weight:400;font-size:1.5rem;color:var(--gold-2);margin:0 0 4px}
+.req-note{font-family:"Josefin Sans",sans-serif;font-size:.78rem;color:var(--muted);margin:0 0 18px}
+.req,.req-note span{color:var(--gold-2)}
+.grid2{display:grid;gap:0 18px}
+@media (min-width:640px){.grid2{grid-template-columns:1fr 1fr}}
+.field{margin:0 0 18px;display:flex;flex-direction:column}
+.field label{font-family:"Josefin Sans",sans-serif;font-weight:600;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--cream);margin:0 0 8px}
+.field .hint,.book .hint{font-family:"Josefin Sans",sans-serif;font-weight:400;font-size:.78rem;letter-spacing:.02em;text-transform:none;color:var(--muted)}
+.field>.hint{margin-top:6px}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-family:"Josefin Sans",sans-serif;font-size:16px;color:var(--cream);background:#0d0b08;border:1px solid rgba(201,162,74,.45);border-radius:0;padding:12px 12px;min-height:48px;-webkit-appearance:none;appearance:none}
+.field input[type=date]{min-height:48px;color-scheme:dark}
+.field select{background-image:linear-gradient(45deg,transparent 50%,#c9a24a 50%),linear-gradient(135deg,#c9a24a 50%,transparent 50%);background-position:calc(100% - 18px) 21px,calc(100% - 13px) 21px;background-size:5px 5px;background-repeat:no-repeat;padding-right:36px}
+.field select option,.field select optgroup{background:#14120e;color:var(--cream)}
+.field textarea{resize:vertical;min-height:110px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--gold-2);outline-offset:1px;border-color:var(--gold-2)}
+.field [aria-invalid=true]{border-color:#e07a5f}
+.ferr{margin:6px 0 0;font-family:"Josefin Sans",sans-serif;font-size:.85rem;color:#f0a58f}
+.honey{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+.btn.block{display:block;width:100%;font-size:.8rem;padding:17px 22px;cursor:pointer}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.form-err{border:1px solid #e07a5f;color:#f6c1b2;background:rgba(224,122,95,.08);padding:12px 14px;font-family:"Josefin Sans",sans-serif;margin:0 0 16px}
+.form-off{font-family:"Josefin Sans",sans-serif;color:var(--muted);font-size:.9rem;text-align:center;margin:0 0 14px}
+.form-ok{text-align:center;padding:40px 10px}
+.form-ok h3{font-size:2.4rem;color:var(--cream);margin:0 0 10px}
+.form-ok p{font-family:"Josefin Sans",sans-serif;color:#cfc6b4;margin:0}
+.form-ok:focus{outline:none}
+@media (min-width:900px){.book-grid{grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}.book-head{position:sticky;top:110px}.book-card{padding:40px 38px 40px}}
+.service-area{margin:26px auto 0;font-family:"Josefin Sans",sans-serif;font-weight:600;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-2);max-width:48rem;line-height:1.9}
+.service-area span{font-size:.6rem;color:var(--gold);margin:0 6px;vertical-align:middle}
