@@ -5,7 +5,7 @@
      'https://formspree.io/f/<form-id>'  -> sends via fetch (Formspree JSON), inline success/error
      'mailto:<address>'                  -> opens the visitor's mail app with the inquiry filled in
    ============================================================ */
-var FORM_ENDPOINT = '';
+var FORM_ENDPOINT = 'https://formspree.io/f/mljjbazr';
 
 (function () {
   var form = document.getElementById('book-form');
