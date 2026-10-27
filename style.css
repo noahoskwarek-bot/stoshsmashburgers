@@ -96,6 +96,7 @@ footer{background:#070605;border-top:1px solid rgba(255,255,255,.1);padding:34px
 .nf p{font-family:"Josefin Sans",sans-serif;color:var(--muted);margin:0 0 26px}
 /* events CTA + booking inquiry */
 .ev-cta{margin:30px 0 0}
+.ev-dl{margin:14px 0 0}
 .book{background:var(--cream);color:var(--text);padding:76px 0 86px;border-top:1px solid var(--gold)}
 .book-grid{display:grid;gap:34px}
 .book .rule.left{margin:0 0 22px;width:120px}
