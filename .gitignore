@@ -1,3 +1,4 @@
 *.pdf
 brand-src/
 .DS_Store
+!files/*.pdf
